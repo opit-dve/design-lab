@@ -1,23 +1,20 @@
 package com.example.designlab.activity;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.FrameLayout;
 
 import com.example.designlab.R;
 import com.example.designlab.fragment.ContainerFragment1;
 import com.example.designlab.fragment.ContainerFragment2;
 import com.example.designlab.fragment.ContainerFragment3;
 import com.example.designlab.fragment.ContainerFragment4;
+import com.example.designlab.fragment.ContainerFragment5;
 
 public class ContainerActivity extends AppCompatActivity implements
         NavigationView.OnNavigationItemSelectedListener {
@@ -64,6 +61,10 @@ public class ContainerActivity extends AppCompatActivity implements
             case R.id.nav_manage:
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,
                         ContainerFragment4.newInstance()).commit();
+                break;
+            case R.id.nav_custom:
+                getSupportFragmentManager().beginTransaction().replace(R.id.container,
+                        ContainerFragment5.newInstance()).commit();
                 break;
             case R.id.nav_share:
 

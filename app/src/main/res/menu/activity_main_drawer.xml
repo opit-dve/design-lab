@@ -20,6 +20,7 @@
             android:icon="@android:drawable/ic_menu_manage"
             android:title="Tools" />
         <item
+            android:id="@+id/nav_custom"
             android:title="Custom"
             app:actionLayout="@layout/nav_header_main" />
     </group>
